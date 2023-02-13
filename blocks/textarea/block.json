@@ -1,0 +1,22 @@
+{
+	"apiVersion": 2,
+	"name": "pysar/textarea",
+	"title": "textarea",
+	"description": "Pysar TextArea block for custom forms",
+	"category": "text",
+	"icon": "forms",
+	"textdomain": "textarea",
+	"editorScript": "file:./build/index.js",
+	"style": "file:./build/style-index.css",
+	"editorStyle": "file:./build/index.css",
+	"attributes": {
+		"inputName": {
+			"type": "string",
+			"default": "changeDefaultName"
+		},
+		"isRequired":{
+			"type": "boolean",
+			"default": false
+		}
+	}
+}
