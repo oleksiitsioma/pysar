@@ -1,0 +1,12 @@
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/admin-style.scss ***!
+  \***************************************************************************************************************/
+.pysarInput__settings {
+  background-color: white;
+  border-radius: 4px;
+  padding: 15px 12px;
+}
+.pysarInput__settingsItem {
+  margin: 0 0 10px;
+  font-size: 0.875rem;
+}

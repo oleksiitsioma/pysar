@@ -1,0 +1,68 @@
+// INPUT STYLES
+
+@mixin transparent-input{
+
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgba($color: $color-lavender, $alpha: 0.5) ;
+    background: transparent;
+    color: $color-lavender;
+
+    &:focus{
+        outline: none;
+        border-bottom: 1px solid $color-lavender;
+        background-color: rgba($color: $color-lavender, $alpha: 0.1);
+    }
+}
+
+@mixin regular-input{
+    border-radius: 8px;
+    border: 1px solid $color-lavender;
+}
+
+@mixin inverted-input{
+
+    border: 1px solid rgba($color: $color-lavender, $alpha: 0.5) ;
+    border-radius: 8px;
+    background: transparent;
+    color: $color-lavender;
+
+    &:focus{
+        outline: none;
+        border-width: 2px;
+        border-color: $color-lavender;
+    }
+}
+
+.pysarForm{
+
+    width: 100%;
+    padding: 50px 20px;
+    max-width: 500px;
+
+    &_fullwidth{
+        max-width: none;
+    }
+
+    &_regularInputs{
+
+        .pysarInput{
+            @include regular-input;
+        }
+    }
+
+    &_transparentInputs{
+
+        .pysarInput{
+            @include transparent-input;
+        }
+    }
+
+    &_darkBG{
+
+        .pysarInput{
+            @include inverted-input;
+        }
+    }
+
+}
