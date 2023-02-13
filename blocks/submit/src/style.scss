@@ -1,0 +1,24 @@
+.pysarInput{
+
+    height: 50px;
+    width: 100%;
+    display: block;
+    padding: 5px 12px;
+    line-height: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Bebas Neue';
+
+    &_textarea{
+
+        resize: none;
+        height: 150px;
+        overflow-y: auto;
+    }
+
+    &:not(:last-child){
+        margin-bottom: 25px;
+    }
+
+}
