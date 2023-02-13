@@ -1,0 +1,26 @@
+{
+	"apiVersion": 2,
+	"name": "pysar/input",
+	"title": "input",
+	"description": "Pysar Input block for custom forms",
+	"category": "text",
+	"icon": "forms",
+	"textdomain": "input",
+	"editorScript": "file:./build/index.js",
+	"style": "file:./build/style-index.css",
+	"editorStyle": "file:./build/index.css",
+	"attributes": {
+		"inputName": {
+			"type": "string",
+			"default": "changeDefaultName"
+		},
+		"inputType": {
+			"type": "string",
+			"default": "text"
+		},
+		"isRequired":{
+			"type": "boolean",
+			"default": false
+		}
+	}
+}
