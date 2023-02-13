@@ -1,6 +1,6 @@
 <?php 
 
-$BlocksParser = scandir(  plugin_dir_path( __FILE__ ) . 'blocks' );
+$BlocksParser = scandir(  plugin_dir_path( __DIR__ ) . 'blocks' );
 
 $BlocksRemovableValues = array( '.' , '..' );
 
@@ -13,7 +13,7 @@ function ___pysar_register_blocks() {
     global $BlocksParser;
 
     foreach( $BlocksParser as $type ){
-        register_block_type_from_metadata( plugin_dir_path( __FILE__ ) . 'blocks/' . $type );
+        register_block_type_from_metadata( plugin_dir_path( __DIR__ ) . 'blocks/' . $type );
     }
 }
 

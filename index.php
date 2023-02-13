@@ -21,4 +21,4 @@ require_once( __DIR__ . '/inc/forms-post-type.php');
 
 // REGISTERING STYLES AND SCRIPTS
 
-require_once( __DIR__ . '/inc/plugin-scripts.php')
+require_once( __DIR__ . '/inc/plugin-scripts.php');
